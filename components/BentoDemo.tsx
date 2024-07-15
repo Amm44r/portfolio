@@ -21,7 +21,10 @@ const features = [
         href: "/web-design-agency",
         cta: "Learn more",
         className: "col-span-3 md:col-span-1 aspect-w-1 aspect-h-1",
-        background: "",
+        background: <img 
+        src="/images/indx.jpg"
+        alt="indx agency"
+        className="w-full"/>,
       },
       {
         Icon: FileTextIcon,
@@ -29,7 +32,7 @@ const features = [
         description: "",
         href: "",
         cta: "Learn more",
-        className: "col-span-3 md:col-span-1 aspect-w-1 aspect-h-1",
+        className: "col-span-3 md:col-span-1 aspect-w-1 aspect-h-1 hidden md:block",
         background: "",
       },
 ];

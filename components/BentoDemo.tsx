@@ -4,47 +4,38 @@ import { BellIcon, CalendarIcon, FileTextIcon, GlobeIcon, InputIcon } from "@rad
 const features = [
     {
         Icon: FileTextIcon,
-        name: "About me",
-        description: "I have noting",
-        href: "/",
+        name: "HRMS: User provision system",
+        description: "2024",
+        href: "/hrms-case-study",
         cta: "Learn more",
-        className: "col-span-3 md:col-span-1",
+        className: "col-span-3 md:col-span-1 aspect-w-1 aspect-h-1",
+        background: <img 
+        src="/images/test.jpg"
+        className="w-full"/>,
+      },
+      {
+        Icon: FileTextIcon,
+        name: "Web design agency: Visual identity",
+        description: "2023",
+        href: "/web-design-agency",
+        cta: "Learn more",
+        className: "col-span-3 md:col-span-1 aspect-w-1 aspect-h-1",
         background: "",
       },
       {
-        Icon: InputIcon,
-        name: "Tech stack",
-        description: "HTML, CSS, Tailwind, React.JS, Next.JS",
-        href: "/",
+        Icon: FileTextIcon,
+        name: "",
+        description: "",
+        href: "",
         cta: "Learn more",
-        className: "col-span-3 md:col-span-2",
-        background: "",
-      },
-      {
-        Icon: BellIcon, 
-        name: "Extras",
-        description: "Hackathons, certificates",
-        href: "/",
-        cta: "Learn more",
-        className: "col-span-3 md:col-span-2",
-        background: (
-          ""
-        ),
-      },
-      {
-        Icon: CalendarIcon,
-        name: "Keep in touch",
-        description: "Use the calendar to filter your files by date.",
-        className: "col-span-3 md:col-span-1",
-        href: "/",
-        cta: "Learn more",
+        className: "col-span-3 md:col-span-1 aspect-w-1 aspect-h-1",
         background: "",
       },
 ];
 
 export async function BentoDemo() {
   return (
-    <BentoGrid className="grid-rows-4 md:grid-rows-2 max-w-[1000px] mx-auto">
+    <BentoGrid className="grid-rows-3 md:grid-rows-1"> {/* change md */}
       {features.map((feature) => (
         <BentoCard key={feature.name} {...feature} />
       ))}

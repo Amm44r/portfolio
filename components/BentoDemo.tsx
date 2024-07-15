@@ -11,6 +11,7 @@ const features = [
         className: "col-span-3 md:col-span-1 aspect-w-1 aspect-h-1",
         background: <img 
         src="/images/test.jpg"
+        alt="HRMS"
         className="w-full"/>,
       },
       {

@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
         <div className='flex flex-col sm:flex-row gap-8 sm:gap-16'>
             <div className='flex flex-col'>
-                <span className='text-gray-400'>Let's chat</span>
+                <span className='text-gray-400'>Let&apos;s chat</span>
                 <span className='text-gray-600'>ammaarkhan2021@gmail.com</span>
             </div>
             <div className='flex flex-col gap-2 text-gray-600'>

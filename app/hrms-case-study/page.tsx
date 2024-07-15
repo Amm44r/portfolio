@@ -80,7 +80,7 @@ const hrms = () => {
                         hindering user experience and operational effectiveness.
                     </p>
                 </div>
-                <img src='/images/hrms/problem.jpg' className='mt-2'/>
+                <img src='/images/hrms/problem.jpg' alt='problem' className='mt-2'/>
             </div>
         </div>
         <div className='p-16'> {/* goal */}
@@ -156,7 +156,7 @@ const hrms = () => {
                         and task completion between new employees and HR.
                     </p>
                 </div>
-                <img src='/images/hrms/research-and-process.jpg' className='mt-2'/>
+                <img src='/images/hrms/research-and-process.jpg' alt='research and process' className='mt-2'/>
             </div>
         </div>
         <div className='p-16'> {/* component insights */}
@@ -178,12 +178,12 @@ const hrms = () => {
                                 experience.
                             </p>
                         </div>
-                        <img src='/images/hrms/component-insights-0.jpg' className='max-w-[446px]'/>
+                        <img src='/images/hrms/component-insights-0.jpg' alt='component insights' className='max-w-[446px]'/>
                     </div>
                 </div>
                     
                 <div className='flex flex-col gap-6'> {/* 1 */}
-                    <img src='/images/hrms/component-insights-1.jpg'/>
+                    <img src='/images/hrms/component-insights-1.jpg' alt='display details on hover or on click'/>
                     <div className='flex flex-col gap-2'>
                         <h3 className='text-gray-900 text-[24px]'>
                             Display details on hover or on click
@@ -204,18 +204,18 @@ const hrms = () => {
                     
                 </div>
                 <div className='flex flex-col gap-6'> {/* 2 */}
-                    <img src='/images/hrms/component-insights-2.jpg'/>
+                    <img src='/images/hrms/component-insights-2.jpg' alt='click to add or drag and drop to add'/>
                     <div className='flex flex-col gap-2'>
                         <h3 className='text-gray-900 text-[24px]'>
-                            ‘Click to add’ or ‘drag and drop to add’
+                            &apos;Click to add&apos; or &apos;drag and drop to add&apos;
                         </h3>
                         <p className='text-gray-600 text-[12px]'>
-                            ‘Click to add’ offers immediate action with a 
+                            &apos;Click to add&apos; offers immediate action with a 
                             straightforward interface, ensuring simplicity and 
-                            clarity in item addition. Conversely, ‘drag and drop 
-                            to add’ provides a tactile, intuitive method for 
-                            users to organise items without going into an ‘item 
-                            selection’ state. <br/>
+                            clarity in item addition. Conversely, &apos;drag and drop 
+                            to add&apos; provides a tactile, intuitive method for 
+                            users to organise items without going into an &apos;item 
+                            selection&apos; state. <br/>
                             <br/>
                             Ultimately, I prioritised usability and user preference, 
                             integrating both options to cater to different user workflows 
@@ -226,8 +226,8 @@ const hrms = () => {
                     
                 </div>
                 <div className='flex flex-col gap-6'> {/* 3 and 4 */}
-                    <img src='/images/hrms/component-insights-3.jpg'/>
-                    <img src='/images/hrms/component-insights-4.jpg'/>
+                    <img src='/images/hrms/component-insights-3.jpg' alt='varying layouts for item removal'/>
+                    <img src='/images/hrms/component-insights-4.jpg' alt='mobile and desktop version for removing items'/>
                     <div className='flex flex-col gap-2'>
                         <h3 className='text-gray-900 text-[24px]'>
                             Additional states for adding and removing items?
@@ -271,12 +271,12 @@ const hrms = () => {
                                 readability. 
                             </p>
                         </div>
-                        <img src='/images/hrms/visual-design-0.jpg' className='max-w-[396px]'/>
+                        <img src='/images/hrms/visual-design-0.jpg' alt='visual iterations' className='max-w-[396px]'/>
                     </div>
                 </div>
                     
                 <div className='flex flex-col gap-6'> {/* 1 */}
-                    <img src='/images/hrms/visual-design-1.jpg'/>
+                    <img src='/images/hrms/visual-design-1.jpg' alt='experimenting with visual iterations'/>
                     <div className='flex flex-col gap-2'>
                         <h3 className='text-gray-900 text-[24px]'>
                             Experimenting...
@@ -285,7 +285,7 @@ const hrms = () => {
                     
                 </div>
                 <div className='flex flex-col gap-6'> {/* 2 */}
-                    <img src='/images/hrms/visual-design-2.jpg'/>
+                    <img src='/images/hrms/visual-design-2.jpg' alt='number preview placement'/>
                     <div className='flex flex-col gap-2'>
                         <h3 className='text-gray-900 text-[24px]'>
                             Number preview placement
@@ -315,12 +315,12 @@ const hrms = () => {
                                 confusion with scrolling gestures.
                             </p>
                         </div>
-                        <img src='/images/hrms/accessibility-0.jpg' className='max-w-[396px]'/>
+                        <img src='/images/hrms/accessibility-0.jpg' alt='accessibility' className='max-w-[396px]'/>
                     </div>
                 </div>
                     
                 <div className='flex flex-col gap-6'> {/* 1 */}
-                    <img src='/images/hrms/accessibility-1.jpg'/>
+                    <img src='/images/hrms/accessibility-1.jpg' alt='bulk adding items'/>
                     <div className='flex flex-col gap-2'>
                         <h3 className='text-gray-900 text-[24px]'>
                             Bulk adding items
@@ -328,14 +328,14 @@ const hrms = () => {
                         <p className='text-gray-600 text-[12px]'>
                             Offering different options for the same actions 
                             enhances the user experience, by implementing 
-                            both ‘drag and drop’ and ‘click to add’ users can 
+                            both &apos;drag and drop&apos; and &apos;click to add&apos; users can 
                             choose their preferred method.
                         </p>
                     </div>
                     
                 </div>
                 <div className='flex flex-col gap-6'> {/* 2 */}
-                    <img src='/images/hrms/accessibility-2.jpg'/>
+                    <img src='/images/hrms/accessibility-2.jpg' alt='select state micro-interactions'/>
                     <div className='flex flex-col gap-2'>
                         <h3 className='text-gray-900 text-[24px]'>
                             Select state micro-interactions
@@ -344,7 +344,7 @@ const hrms = () => {
                             Instant add lets users quickly add items with just 
                             one click, making things fast and efficient. However, 
                             it can cause the items to shift around every time 
-                            something’s added, which can be a bit disruptive. 
+                            something&apos;s added, which can be a bit disruptive. 
                             On the other hand select and add offers a more thoughtful 
                             approach, where users can pick multiple items at once. 
                             This way, everything stays more organised and under control.
@@ -384,7 +384,7 @@ const hrms = () => {
                             <p className='text-gray-600 text-[12px]'>
                                 <span className='text-purple-400'>8px</span> gap between content</p>
                         </div>
-                        <img src='/images/hrms/design-systems.jpg' className='max-w-[350px]'/>
+                        <img src='/images/hrms/design-systems.jpg' alt='design guidelines' className='max-w-[350px]'/>
                     </div>
                 </div>
 
@@ -393,7 +393,7 @@ const hrms = () => {
         <div className='p-16'> {/* final design */}
             <div className='flex max-w-[1000px] mx-auto'>
                 <div className='flex flex-col mx-auto gap-6'>
-                    <img src='/images/hrms/final-design.jpg' className='max-w-[728px]'/>
+                    <img src='/images/hrms/final-design.jpg' alt='final design' className='max-w-[728px]'/>
                     <h3 className='text-gray-900 text-[24px] text-center'>
                         Final design
                     </h3>

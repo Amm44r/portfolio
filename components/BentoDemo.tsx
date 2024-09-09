@@ -4,7 +4,7 @@ import { BellIcon, CalendarIcon, FileTextIcon, GlobeIcon, InputIcon } from "@rad
 const features = [
     {
         Icon: FileTextIcon,
-        name: "HRMS: User provision system",
+        name: "HRMS: Design strategy",
         description: "2024",
         href: "/hrms-case-study",
         cta: "Learn more",

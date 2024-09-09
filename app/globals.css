@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.pulse {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    background: #0E7AFE;
+    border-radius: 50%;
+}
+
+.pulse::before {
+    content: '';
+    position: absolute;
+    top: -8px; /* Half of the pulse size */
+    left: -8px; /* Half of the pulse size */
+    width: 24px; /* Maximum pulse size */
+    height: 24px; /* Maximum pulse size */
+    background: #0E7AFE;
+    border-radius: 50%;
+    opacity: 0;
+    animation: pulseAnimate 2s ease-out infinite;
+}
+
+@keyframes pulseAnimate {
+    0% {
+        transform: scale(0.5); /* Smaller at start */
+        opacity: 0.25;
+    }
+    50% {
+        transform: scale(1); /* Full size */
+        opacity: 0;
+    }
+    100% {
+        transform: scale(0); /* Full size */
+        opacity: 0;
+    }
+}

@@ -18,12 +18,11 @@ const Hero = () => {
         </div>
         <div className='flex justify-center'>
             <div className='max-w-[89vw] flex flex-col items-center justify-center'>
-                <a 
-                href='https://github.com/Amm44r/portfolio'
-                className='outline outline-1 outline-gray-400 text-gray-400 uppercase font-semibold text-[8px] text-center leading-[12px] tracking-widest rounded-full py-0.5 px-4'
-                target='_blank'>
-                access github repo
-                </a>
+                <div className='flex items-center gap-[16px] text-gray-600 font-normal text-[10px] text-center tracking-widest rounded-full py-0.5 px-4'>
+                    <div className='pulse'>
+                    </div>
+                    Currently looking for an internship
+                </div>
 
                 <TextGenerateEffect 
                 className='text-center text-gray-900 text-[32px] max-w-[480px]'

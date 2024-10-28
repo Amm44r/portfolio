@@ -12,6 +12,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
+        serif: ['"Instrument Serif"', ...fontFamily.serif],
       },
       colors: {
         black: {
@@ -20,6 +21,9 @@ const config: Config = {
         },
         blue: {
           DEFAULT: '#0E7AFE',
+        },
+        orange: {
+          DEFAULT: '#FE5A0E',
         }
       }
     },

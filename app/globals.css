@@ -2,11 +2,91 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+body {
+    cursor: none;
+}*/
+
+.button-primary {
+    color: #F3F4F6; /* Initial text color (gray-100) */
+    font-weight: 500; /* font-medium */
+    font-size: 12px; /* text-[12px] */
+    line-height: 16px; /* leading-[16px] */
+    background-color: #FE5A0E; /* bg-orange */
+    border: 1px solid transparent; /* No initial border */
+    border-radius: 9999px; /* rounded-full */
+    padding: 8px 16px; /* py-2 px-4 */
+    transition: all 0.3s ease; /* Smooth transition */
+  }
+  
+  .button-primary:hover {
+    background-color: #F3F4F6; /* Change background to white on hover */
+    color: #FE5A0E; /* Change text color to orange on hover */
+    border-color: #FE5A0E; /* Add orange outline on hover */
+  }
+
+  .button-secondary {
+    color: #4b5563; /* Initial text color (gray-600) */
+    font-weight: 500; /* font-medium */
+    font-size: 12px; /* text-[12px] */
+    line-height: 16px; /* leading-[16px] */
+    margin: 8px 16px; /* my-2 mx-4 */
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease; /* Smooth transition for color */
+  }
+  
+  .button-secondary:hover {
+    color: #FE5A0E; /* Orange color on hover */
+  }
+  
+  .button-secondary .icon {
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and movement */
+  }
+  
+  .button-secondary:hover .icon {
+    color: #FE5A0E; /* Change icon color to orange on hover */
+    transform: translate(2px, -2px); /* Move the icon 2px right and 2px up */
+  }
+
+
+
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1000;
+    mix-blend-mode: difference;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.cursor-text {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: none;
+}
+
+  
+  .instrument-serif-regular-italic {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
 .pulse {
     position: relative;
     width: 8px;
     height: 8px;
-    background: #0E7AFE;
+    background: #FE5A0E;
     border-radius: 50%;
 }
 
@@ -17,7 +97,7 @@
     left: -8px; /* Half of the pulse size */
     width: 24px; /* Maximum pulse size */
     height: 24px; /* Maximum pulse size */
-    background: #0E7AFE;
+    background: #FE5A0E;
     border-radius: 50%;
     opacity: 0;
     animation: pulseAnimate 2s ease-out infinite;

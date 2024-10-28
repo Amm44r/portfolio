@@ -17,17 +17,18 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
-  hidden: { opacity: 0, y: 50 }, // Start with opacity 0 and translate down 50px
+const itemVariants = (initialY: number, delay: number) => ({
+  hidden: { opacity: 0, y: initialY },
   visible: {
-    opacity: 1, 
-    y: 0, 
+    opacity: 1,
+    y: 0,
     transition: {
-      duration: 0.5, 
+      duration: 0.75,
       ease: [0.645, 0.045, 0.355, 1], // In Out Quart easing
+      delay: delay, // Custom delay for each child
     },
   },
-};
+});
 
 const Hero = () => {
   return (
@@ -43,8 +44,8 @@ const Hero = () => {
 
           {/* First Div: Internship Status */}
           <motion.div
-            className="flex items-center gap-[16px] text-gray-600 font-normal text-[10px] text-center tracking-widest rounded-full py-0.5 px-4"
-            variants={itemVariants}
+            className="flex items-center gap-[16px] text-gray-600 font-normal text-[12px] text-center  rounded-full py-0.5 px-4"
+            variants={itemVariants(16, 0)} // y: 16, delay: 0
           >
             <div className="pulse"></div>
             Currently looking for an internship
@@ -52,49 +53,40 @@ const Hero = () => {
 
           {/* Second Div: Static Text */}
           <motion.div
-            className="text-center mt-4 font-bold leading-snug tracking-wide text-gray-900 text-[32px] max-w-[480px]"
-            variants={{
-              ...itemVariants,
-              visible: {
-                ...itemVariants.visible,
-                transition: {
-                  ...itemVariants.visible.transition,
-                  delay: 0.3, // Delay for 2nd child
-                },
-              },
-            }}
+            className="text-center mt-4 font-normal leading-snug  text-gray-900 text-[32px] max-w-[600px]"
+            variants={itemVariants(24, 0.3)} // y: 24, delay: 0.3
           >
-            Crafting products, interactions & stories.
+            <span className="instrument-serif-regular-italic">Ammaar Khan</span> - product (UI/UX) designer
+          </motion.div>
+
+          {/* First Div: Internship Status */}
+          <motion.div
+            className="flex items-center mt-4 gap-[16px] text-gray-600 font-normal text-[12px] text-center  rounded-full py-0.5 px-4 max-w-[480px]"
+            variants={itemVariants(32, 0.4)} // y: 16, delay: 0
+          >
+            I'm a 2nd year University student studying a double degree in Science & IT 
+            with a passion for design and all things tech
           </motion.div>
 
           {/* Third Div: Buttons */}
           <motion.div
             className="flex gap-4 mt-6"
-            variants={{
-              ...itemVariants,
-              visible: {
-                ...itemVariants.visible,
-                transition: {
-                  ...itemVariants.visible.transition,
-                  delay: 0.5, // Delay for 3rd child
-                },
-              },
-            }}
+            variants={itemVariants(32, 0.5)} // y: 32, delay: 0.5
           >
             <button
-              className="text-gray-100 font-medium text-[12px] leading-[16px] bg-blue rounded-full py-2 px-4"
+              className="button-primary"
               onClick={() => scrollToSection("footer")}
             >
               Get in touch
             </button>
             <a
               href="https://drive.google.com/file/d/1xXgoxgA9vDCoSK0Yj8W8uB0fCgdDpZ65/view?usp=drive_link"
-              className="flex items-center text-gray-600 font-medium text-[12px] leading-[16px] my-2 mx-4"
+              className="button-secondary"
               target="_blank"
               rel="noopener noreferrer"
             >
               View resume
-              <GoArrowUpRight className="ml-1" />
+              <GoArrowUpRight className="ml-1 icon" />
             </a>
           </motion.div>
         </div>

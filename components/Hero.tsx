@@ -44,7 +44,7 @@ const Hero = () => {
 
           {/* First Div: Internship Status */}
           <motion.div
-            className="flex items-center gap-[16px] text-gray-600 font-normal text-[12px] text-center  rounded-full py-0.5 px-4"
+            className="flex items-center gap-[16px] text-gray-600 font-normal text-[12px] text-center rounded-full py-0.5 px-4"
             variants={itemVariants(16, 0)} // y: 16, delay: 0
           >
             <div className="pulse"></div>
@@ -53,7 +53,7 @@ const Hero = () => {
 
           {/* Second Div: Static Text */}
           <motion.div
-            className="text-center mt-4 font-normal leading-snug  text-gray-900 text-[32px] max-w-[600px]"
+            className="text-center mt-4 font-normal leading-snug text-gray-900 text-[32px] max-w-[600px]"
             variants={itemVariants(24, 0.3)} // y: 24, delay: 0.3
           >
             <span className="instrument-serif-regular-italic">Ammaar Khan</span> - product (UI/UX) designer
@@ -61,7 +61,7 @@ const Hero = () => {
 
           {/* First Div: Internship Status */}
           <motion.div
-            className="flex items-center mt-4 gap-[16px] text-gray-600 font-normal text-[12px] text-center  rounded-full py-0.5 px-4 max-w-[480px]"
+            className="flex items-center mt-4 gap-[16px] text-gray-600 font-normal text-[12px] text-center rounded-full py-0.5 px-4 max-w-[480px]"
             variants={itemVariants(32, 0.4)} // y: 16, delay: 0
           >
             I&apos;m a 2nd year University student studying a double degree in Science & IT 

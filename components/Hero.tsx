@@ -80,7 +80,7 @@ const Hero = () => {
               Get in touch
             </button>
             <a
-              href="https://drive.google.com/file/d/1xXgoxgA9vDCoSK0Yj8W8uB0fCgdDpZ65/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1Q5cpQS9_I9HBkKo3plUY61iD0yHfhT3C/view?usp=sharing"
               className="button-secondary"
               target="_blank"
               rel="noopener noreferrer"

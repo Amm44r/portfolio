@@ -64,8 +64,8 @@ const Hero = () => {
             className="flex items-center mt-4 gap-[16px] text-gray-600 font-normal text-[12px] text-center rounded-full py-0.5 px-4 max-w-[480px]"
             variants={itemVariants(32, 0.4)} // y: 16, delay: 0
           >
-            I&apos;m a 2nd year University student studying a double degree in Science & IT 
-            with a passion for design and all things tech
+            I thrive on designing intuitive solutions that elevate B2C 
+            companies and create meaningful connections with users.
           </motion.div>
 
           {/* Third Div: Buttons */}

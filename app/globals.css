@@ -14,7 +14,7 @@ body {
     line-height: 16px; /* leading-[16px] */
     background-color: #FE5A0E; /* bg-orange */
     border: 1px solid transparent; /* No initial border */
-    border-radius: 9999px; /* rounded-full */
+    border-radius: 12px; /* rounded-full */
     padding: 8px 16px; /* py-2 px-4 */
     transition: all 0.3s ease; /* Smooth transition */
   }

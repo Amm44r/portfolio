@@ -40,7 +40,7 @@ const Footer = () => {
               <div className='flex flex-col'>
                   <span className='text-gray-400'>Let&apos;s chat</span>
                   <span 
-                    className={`inline-flex items-center text-gray-600 cursor-pointer gap-[4px] px-[8px] py-[2px] rounded-full border ${getBorderColor()} transition-all duration-300 ease-in-out`}
+                    className={`inline-flex items-center text-gray-600 cursor-pointer gap-[4px] px-[8px] py-[4px] rounded-[8px] border ${getBorderColor()} transition-all duration-300 ease-in-out`}
                     onClick={copyToClipboard}
                   >
                     {copyStatus === null ? (

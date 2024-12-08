@@ -53,7 +53,7 @@ const Hero = () => {
 
           {/* Second Div: Static Text */}
           <motion.div
-            className="text-center mt-4 font-normal leading-snug text-gray-900 text-[32px] max-w-[600px]"
+            className="text-center mt-4 font-semibold leading-snug text-gray-900 text-[32px] max-w-[600px]"
             variants={itemVariants(24, 0.3)} // y: 24, delay: 0.3
           >
             <span className="instrument-serif-regular-italic">Ammaar Khan</span> - product (UI/UX) designer

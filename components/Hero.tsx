@@ -52,14 +52,14 @@ const Hero = () => {
           </motion.div>
 
           {/* Second Div: Static Text */}
-          <motion.div
+          <motion.h1
             className="text-center mt-4 font-semibold leading-snug text-gray-900 text-[32px] max-w-[600px]"
             variants={itemVariants(24, 0.3)} // y: 24, delay: 0.3
           >
             <span className="instrument-serif-regular-italic">Ammaar Khan</span> - product (UI/UX) designer
-          </motion.div>
+          </motion.h1>
 
-          {/* First Div: Internship Status */}
+          {/* Third Div: Introductory text */}
           <motion.div
             className="flex items-center mt-4 gap-[16px] text-gray-600 font-normal text-[12px] text-center rounded-full py-0.5 px-4 max-w-[480px]"
             variants={itemVariants(32, 0.4)} // y: 16, delay: 0
@@ -68,7 +68,7 @@ const Hero = () => {
             companies and create meaningful connections with users.
           </motion.div>
 
-          {/* Third Div: Buttons */}
+          {/* Fourth Div: Buttons */}
           <motion.div
             className="flex gap-4 mt-6"
             variants={itemVariants(32, 0.5)} // y: 32, delay: 0.5

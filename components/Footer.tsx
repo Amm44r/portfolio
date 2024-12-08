@@ -36,11 +36,10 @@ const Footer = () => {
               </div>
               <span className='text-gray-400'>All rights reserved.</span>
           </div>
-          <div className='flex flex-col sm:flex-row gap-8 sm:gap-16'>
+          <div className='flex flex-col sm:flex-row gap-8 sm:gap-[16px]'>
               <div className='flex flex-col'>
-                  <span className='text-gray-400'>Let&apos;s chat</span>
                   <span 
-                    className={`inline-flex items-center text-gray-600 cursor-pointer gap-[4px] px-[8px] py-[4px] rounded-[8px] border ${getBorderColor()} transition-all duration-300 ease-in-out`}
+                    className={`inline-flex h-[24px] items-center text-gray-600 leading-[16px] cursor-pointer gap-[8px] px-[8px] py-[4px] rounded-[8px] border ${getBorderColor()} transition-all duration-300 ease-in-out`}
                     onClick={copyToClipboard}
                   >
                     {copyStatus === null ? (
@@ -53,11 +52,19 @@ const Footer = () => {
                     <span>ammaarkhan2021@gmail.com</span>
                   </span>
               </div>
-              <div className='flex flex-col gap-2 text-gray-600'>
-                  <a href='https://www.linkedin.com/in/ammaar-khan-3a274a256/' target='_blank' rel='noopener noreferrer'>Linkedin</a>
-                  <a href='https://github.com/Amm44r' target='_blank' rel='noopener noreferrer'>Github</a>
-                  <a href='https://www.instagram.com/ammaar___khan/' target='_blank' rel='noopener noreferrer'>Instagram</a>
-              </div>
+              <a href="https://www.linkedin.com/in/ammaar-khan-3a274a256/" target="_blank" rel="noopener noreferrer">
+                <button
+                  className="button-primary"
+                  style={{
+                    padding: '4px 16px',
+                    borderRadius: '8px',
+                    fontSize: '12px',
+                    lineHeight: '16px',
+                    height: '24px',
+                  }}>
+                  Linkedin
+                </button>
+              </a>
           </div>
       </section>
     );

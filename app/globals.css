@@ -12,7 +12,7 @@ body {
     font-weight: 500; /* font-medium */
     font-size: 12px; /* text-[12px] */
     line-height: 16px; /* leading-[16px] */
-    background-color: #FE5A0E; /* bg-orange */
+    background-color: #FF6600; /* bg-orange */
     border: 1px solid transparent; /* No initial border */
     border-radius: 12px; /* rounded-full */
     padding: 8px 16px; /* py-2 px-4 */
@@ -21,8 +21,8 @@ body {
   
   .button-primary:hover {
     background-color: #F3F4F6; /* Change background to white on hover */
-    color: #FE5A0E; /* Change text color to orange on hover */
-    border-color: #FE5A0E; /* Add orange outline on hover */
+    color: #FF6600; /* Change text color to orange on hover */
+    border-color: #FF6600; /* Add orange outline on hover */
   }
 
   .button-secondary {
@@ -37,7 +37,7 @@ body {
   }
   
   .button-secondary:hover {
-    color: #FE5A0E; /* Orange color on hover */
+    color: #FF6600; /* Orange color on hover */
   }
   
   .button-secondary .icon {
@@ -45,7 +45,7 @@ body {
   }
   
   .button-secondary:hover .icon {
-    color: #FE5A0E; /* Change icon color to orange on hover */
+    color: #FF6600; /* Change icon color to orange on hover */
     transform: translate(2px, -2px); /* Move the icon 2px right and 2px up */
   }
 
@@ -99,7 +99,7 @@ body {
     position: relative;
     width: 8px;
     height: 8px;
-    background: #FE5A0E;
+    background: #FF6600;
     border-radius: 50%;
 }
 
@@ -110,7 +110,7 @@ body {
     left: -8px; /* Half of the pulse size */
     width: 24px; /* Maximum pulse size */
     height: 24px; /* Maximum pulse size */
-    background: #FE5A0E;
+    background: #FF6600;
     border-radius: 50%;
     opacity: 0;
     animation: pulseAnimate 2s ease-out infinite;

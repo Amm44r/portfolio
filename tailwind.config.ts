@@ -23,7 +23,7 @@ const config: Config = {
           DEFAULT: '#0E7AFE',
         },
         orange: {
-          DEFAULT: '#FE5A0E',
+          DEFAULT: '#FF6600',
         }
       }
     },

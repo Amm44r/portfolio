@@ -1,7 +1,7 @@
-import { BentoDemo } from "@/components/BentoDemo";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
+import Play from "@/components/Play";
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
       <div className="w-full">
         <Hero />
         <Projects />
+        <Play />
         <Footer />
       </div>
     </main>

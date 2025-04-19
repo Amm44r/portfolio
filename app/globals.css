@@ -8,29 +8,29 @@ body {
 }*/
 
 .button-primary {
-    color: #F3F4F6; /* Initial text color (gray-100) */
-    font-weight: 500; /* font-medium */
-    font-size: 12px; /* text-[12px] */
-    line-height: 16px; /* leading-[16px] */
-    background-color: #FF6600; /* bg-orange */
-    border: 1px solid transparent; /* No initial border */
-    border-radius: 12px; /* rounded-full */
-    padding: 8px 16px; /* py-2 px-4 */
+    color: #FF6600; /* Initial text color (gray-100) */
+    font-size: 18px; /* text-[12px] */
+    line-height: 24px; /* leading-[16px] */
+    background-color: #F3F4F6; /* bg-orange */
+    border: 2px solid; /* No initial border */
+    border-color: #FF6600; /* Add orange outline on hover */
+    border-radius: 100px; /* rounded-full */
+    padding: 16px 24px; /* py-2 px-4 */
     transition: all 0.3s ease; /* Smooth transition */
   }
   
   .button-primary:hover {
-    background-color: #F3F4F6; /* Change background to white on hover */
-    color: #FF6600; /* Change text color to orange on hover */
-    border-color: #FF6600; /* Add orange outline on hover */
+    background-color: #FF6600; /* Change background to white on hover */
+    color: #F3F4F6; /* Change text color to orange on hover */
+
   }
 
   .button-secondary {
     color: #4b5563; /* Initial text color (gray-600) */
     font-weight: 500; /* font-medium */
-    font-size: 12px; /* text-[12px] */
-    line-height: 16px; /* leading-[16px] */
-    margin: 8px 16px; /* my-2 mx-4 */
+    font-size: 18px; /* text-[12px] */
+    line-height: 24px; /* leading-[16px] */
+    margin: 16px 24px; /* my-2 mx-4 */
     display: flex;
     align-items: center;
     transition: color 0.3s ease; /* Smooth transition for color */
@@ -49,20 +49,46 @@ body {
     transform: translate(2px, -2px); /* Move the icon 2px right and 2px up */
   }
 
+  .button-link {
+    color: #111827; /* Initial text color (gray-600) */
+    font-weight: 500; /* font-medium */
+    font-size: 18px; /* text-[12px] */
+    margin: 8px 16px; /* my-2 mx-4 */
+    line-height: 24px; /* leading-[16px] */
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease; /* Smooth transition for color */
+  }
+
+  .pills {
+    display: flex;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: var(--gray-900, #111827);
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px; /* 133.333% */
+    border-radius: 32px;
+    border: 1px solid var(--gray-300, #D1D5DB);
+  }
+
   .project_card {
     display: flex;          
-    flex-direction: column; 
-    max-width: 720px;    
-    padding: 32px;          
+    max-width: 880px; 
+    height: 400px;   
+    padding: 20px;          
     gap: 24px;
     border-radius: 24px;
     background: var(--gray-100, #F3F4F6);
-    transition: all 0.3s ease;           
-  }
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
 
-  .project_card:hover {
-    background-color: #FFE5D9; 
-  }
+.project_card:hover {
+    transform: translateY(-16px);
+}
 
 .custom-cursor {
     position: fixed;
@@ -97,8 +123,8 @@ body {
 
 .pulse {
     position: relative;
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
     background: #FF6600;
     border-radius: 50%;
 }
@@ -106,10 +132,10 @@ body {
 .pulse::before {
     content: '';
     position: absolute;
-    top: -8px; /* Half of the pulse size */
-    left: -8px; /* Half of the pulse size */
-    width: 24px; /* Maximum pulse size */
-    height: 24px; /* Maximum pulse size */
+    top: -12px; /* Half of the pulse size */
+    left: -12px; /* Half of the pulse size */
+    width: 36px; /* Maximum pulse size */
+    height: 36px; /* Maximum pulse size */
     background: #FF6600;
     border-radius: 50%;
     opacity: 0;
@@ -129,4 +155,88 @@ body {
         transform: scale(0); /* Full size */
         opacity: 0;
     }
+}
+
+.ibm-plex-mono-thin {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.ibm-plex-mono-extralight {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.ibm-plex-mono-light {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ibm-plex-mono-regular {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibm-plex-mono-medium {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ibm-plex-mono-semibold {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.ibm-plex-mono-bold {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ibm-plex-mono-thin-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.ibm-plex-mono-extralight-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.ibm-plex-mono-light-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ibm-plex-mono-regular-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ibm-plex-mono-medium-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ibm-plex-mono-semibold-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.ibm-plex-mono-bold-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
 }

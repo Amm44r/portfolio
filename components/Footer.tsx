@@ -1,70 +1,53 @@
 "use client";
 
 import React, { useState } from 'react';
-import { PiCopyLight } from "react-icons/pi";
-import { IoCheckmark, IoCloseOutline } from "react-icons/io5";
+import { BiHomeAlt } from "react-icons/bi";
+import { Toaster, toast } from 'react-hot-toast';
+
+const scrollToSection = (id: string) => {
+  const element = document.getElementById(id);
+  element?.scrollIntoView({ behavior: "smooth" });
+};
 
 const Footer = () => {
-    const [copyStatus, setCopyStatus] = useState<null | 'success' | 'failure'>(null);
-
     const copyToClipboard = async () => {
         try {
             await navigator.clipboard.writeText('ammaarkhan2021@gmail.com');
-            setCopyStatus('success'); // Success
+            toast.success("Copied to clipboard!", { duration: 2000 });
         } catch (err) {
-            setCopyStatus('failure'); // Failure
+            toast.error("Failed to copy!");
             console.error('Failed to copy: ', err);
         }
-        setTimeout(() => setCopyStatus(null), 3000); // Reset after 3 seconds
-    };
-
-    const getBorderColor = () => {
-        if (copyStatus === 'success') return 'border-green-500'; // Green for success
-        if (copyStatus === 'failure') return 'border-red-500';   // Red for failure
-        return 'border-gray-400';                                // Default border color
     };
 
     return (
       <section 
-        className='flex flex-col sm:flex-row gap-8 sm:justify-between text-[12px] py-8 sm:py-16 mx-8 sm:mx-16 border-t border-gray-200' 
+        className='flex flex-col sm:flex-row gap-8 sm:justify-between text-[12px] max-w-[880px] w-full justify-self-center py-8 sm:py-16 mx-8 sm:mx-16 border-t border-gray-200' 
         id='footer'
       >
+        {/* Toast Notifications */}
+        <Toaster position="top-center" reverseOrder={false} />
+
+        <div className='flex flex-col sm:flex-row gap-4 sm:gap-[4px] items-center'>
+              <button onClick={() => scrollToSection("hero")}><BiHomeAlt className="w-[16px] h-[16px] m-[12px] icon" /></button>
+              <span className='flex items-center text-[24px]'>·</span>
+              <span 
+                className="inline-flex h-[24px] items-center ibm-plex-mono-medium text-[18px] leading-[24px] text-gray-900 cursor-pointer gap-[8px] px-[16px] py-[8px] transition-all duration-300 ease-in-out"
+                onClick={copyToClipboard}
+              >
+                <span>ammaarkhan2021@gmail.com</span>
+              </span>
+              <span className='flex items-center text-[24px]'>·</span>
+              <a 
+              className="button-link ibm-plex-mono-medium"
+              href="https://www.linkedin.com/in/ammaar-khan-3a274a256/" target="_blank" rel="noopener noreferrer">
+                linkedin
+              </a>
+          </div>
           <div className='flex flex-col sm:flex-row gap-8 sm:gap-16'>
               <div className='flex flex-col'>
-                  <span className='text-gray-400'>Ammaar Khan</span>
-                  <span className='text-gray-600'>Portfolio 2024</span>
+                  <span className='text-gray-600 ibm-plex-mono-medium text-[18px]'>portfolio 2025</span>
               </div>
-              <span className='text-gray-400'>All rights reserved.</span>
-          </div>
-          <div className='flex flex-col sm:flex-row gap-8 sm:gap-[16px]'>
-              <div className='flex flex-col'>
-                  <span 
-                    className={`inline-flex h-[24px] items-center text-gray-600 leading-[16px] cursor-pointer gap-[8px] px-[8px] py-[4px] rounded-[8px] border ${getBorderColor()} transition-all duration-300 ease-in-out`}
-                    onClick={copyToClipboard}
-                  >
-                    {copyStatus === null ? (
-                      <PiCopyLight className='w-[12px] h-[12px]' />
-                    ) : copyStatus === 'success' ? (
-                      <IoCheckmark className='w-[12px] h-[12px] text-green-500' />
-                    ) : copyStatus === 'failure' ? (
-                      <IoCloseOutline className='w-[12px] h-[12px] text-red-500' />
-                    ) : null}
-                    <span>ammaarkhan2021@gmail.com</span>
-                  </span>
-              </div>
-              <a href="https://www.linkedin.com/in/ammaar-khan-3a274a256/" target="_blank" rel="noopener noreferrer">
-                <button
-                  className="button-primary"
-                  style={{
-                    padding: '4px 16px',
-                    borderRadius: '8px',
-                    fontSize: '12px',
-                    lineHeight: '16px',
-                    height: '24px',
-                  }}>
-                  Linkedin
-                </button>
-              </a>
           </div>
       </section>
     );

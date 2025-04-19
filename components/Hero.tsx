@@ -32,66 +32,69 @@ const itemVariants = (initialY: number, delay: number) => ({
 
 const Hero = () => {
   return (
-    <motion.div
+    <motion.section
       className="py-32"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
+      id='hero'
     >
-      <div className="text-gray-900"></div>
-      <div className="flex justify-center">
-        <div className="max-w-[89vw] flex flex-col items-center justify-center">
+        <div className="max-w-[880px] sm:mx-auto mx-[16px] w-full flex flex-col justify-start">
 
           {/* First Div: Internship Status */}
           <motion.div
-            className="flex items-center gap-[16px] text-gray-600 font-normal text-[12px] text-center rounded-full py-0.5 px-4"
+            className="flex ibm-plex-mono-regular items-center w-full gap-[16px] text-gray-600  text-[18px] py-[32px]"
             variants={itemVariants(16, 0)} // y: 16, delay: 0
           >
             <div className="pulse"></div>
-            Currently looking for an internship
+            currently in my penultimate year of studies
           </motion.div>
 
           {/* Second Div: Static Text */}
+          <div className='flex flex-col gap-[24px]'>
           <motion.h1
-            className="text-center mt-4 font-semibold leading-snug text-gray-900 text-[32px] max-w-[600px]"
+            className="ibm-plex-mono-medium sm:tracking-[-2px] text-gray-900 sm:text-[56px] text-[40px]"
             variants={itemVariants(24, 0.3)} // y: 24, delay: 0.3
-          >
-            <span className="instrument-serif-regular-italic">Ammaar Khan</span> - product (UI/UX) designer
+            >
+            Hi <br/>
+            i&apos;m ammaar.
           </motion.h1>
 
           {/* Third Div: Introductory text */}
           <motion.div
-            className="flex items-center mt-4 gap-[16px] text-gray-600 font-normal text-[12px] text-center rounded-full py-0.5 px-4 max-w-[480px]"
+            className="ibm-plex-mono-regular flex text-gray-600 text-[18px] max-w-[640px]"
             variants={itemVariants(32, 0.4)} // y: 16, delay: 0
           >
-            I thrive on designing intuitive solutions that elevate B2C 
-            companies and create meaningful connections with users.
+            I&apos;m a product designer working on the design system at 
+            Refera Trade. My passion is to create emotional experiences 
+            at the intersection of art, design and productivity.
           </motion.div>
+          </div>
+          
 
           {/* Fourth Div: Buttons */}
           <motion.div
-            className="flex gap-4 mt-6"
+            className="flex gap-[16px] py-[32px]"
             variants={itemVariants(32, 0.5)} // y: 32, delay: 0.5
           >
             <button
-              className="button-primary"
+              className="button-primary ibm-plex-mono-medium"
               onClick={() => scrollToSection("footer")}
             >
-              Get in touch
+              say hi
             </button>
             <a
-              href="https://drive.google.com/file/d/1Q5cpQS9_I9HBkKo3plUY61iD0yHfhT3C/view?usp=sharing"
-              className="button-secondary"
+              href="https://drive.google.com/file/d/1pKorKAciuj5un9wNOxRm4n4gzrveVCx3/view?usp=sharing"
+              className="button-secondary ibm-plex-mono-medium gap-[8px]"
               target="_blank"
               rel="noopener noreferrer"
             >
-              View resume
+              resume
               <GoArrowUpRight className="ml-1 icon" />
             </a>
           </motion.div>
         </div>
-      </div>
-    </motion.div>
+    </motion.section>
   );
 };
 

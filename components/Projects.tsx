@@ -27,117 +27,126 @@ const containerVariants = {
 const Projects = () => {
   return (
     <motion.div 
-    className='flex flex-col w-full justify-center items-center'
+    className='flex flex-col w-full justify-center sm:mx-auto mx-[16px] items-center'
     initial="hidden"
     animate="visible"
     variants={containerVariants}
     >
-        <div className='flex flex-col w-full justify-center items-center'>
-            <div className='flex flex-col w-full items-center py-[64px] px-[16px] gap-[32px]'>
-
-                <motion.h2
-                className="text-center font-semibold leading-[32px] text-gray-500 text-[24px]"
-                variants={itemVariants(32, 0.7)}
+            <div className="max-w-[880px] w-full gap-[24px] flex flex-col justify-start">
+                {/* Second Div: Static Text */}
+                <motion.h1
+                className="ibm-plex-mono-medium sm:tracking-[-2px] text-gray-900 sm:text-[56px] text-[40px]"
+                variants={itemVariants(24, 0.3)} // y: 24, delay: 0.3
                 >
-                    Here&apos;s some of my work:
-                </motion.h2>
+                Work
+                </motion.h1>
 
-                <motion.a className='flex w-full' /* refera trade */
-                href='refera-trade'
-                target="_blank" 
-                rel="noopener noreferrer"
-                variants={itemVariants(32, 0.8)} 
+                {/* Third Div: Introductory text */}
+                <motion.div
+                className="ibm-plex-mono-regular flex text-gray-600 text-[18px] max-w-[640px]"
+                variants={itemVariants(32, 0.4)} // y: 16, delay: 0
                 >
-                    <div className='project_card w-full mx-auto'>
-                        <span className='text-gray-500 text-[16px] font-semibold leading-[20px]'>
-                            2024</span>
+                I design intuitive systems that blend function and emotion, 
+                creating experiences that feel effortless. Every project is 
+                an opportunity to refine how people interact with technology.
+                </motion.div>
+            </div>
 
-                            <img 
-                                src="/images/refera_logo.svg" 
-                                alt="Refera Logo" 
-                                className="w-[48px] h-[48px]" 
-                            />
 
-                        <div className='flex flex-col items-start gap-[16px]'>
-                            <div className='flex flex-col items-start'>
-                                <span className='text-gray-900 text-[16px] font-semibold leading-[20px]'>ReferaTrade</span>
-                                <span className='text-gray-500 text-[16px] font-semibold leading-[20px]'>Designing a design system</span>
+            <div className='flex flex-col w-full items-center my-[64px] gap-[64px]'>
+
+                <motion.div className='flex w-full' /* refera trade */
+                variants={itemVariants(32, 0.8)}
+                >
+                    <a className='project_card w-full mx-auto'
+                    //href='refera-trade'
+                    // target="_blank" 
+                    //rel="noopener noreferrer"
+                    >
+                        <div className='flex flex-col w-full h-full'>
+                            <div className='flex flex-col gap-[24px] w-full h-full border-b border-gray-300"'>
+                                <img 
+                                    src="/images/refera_logo.svg" 
+                                    alt="Refera Logo" 
+                                    className="w-[48px] h-[48px]" 
+                                />
+                                <span className='text-gray-900 ibm-plex-mono-medium text-[16px] leading-[20px]'>
+                                    Crafting Refera Trade’s vision: From concept to prototype
+                                </span>
+                                <ul className='flex flex-start gap-[12px] items-stretch flex-wrap'>
+                                    <li className='pills'>B2B</li>
+                                    <li className='pills'>SaaS</li>
+                                    <li className='pills'>UI/UX</li>
+                                    <li className='pills'>Figma</li>
+                                </ul>
                             </div>
-                            <img 
-                                src="/images/add.svg" 
-                                alt="Add Icon" 
-                                className="w-[16px] h-[16px]" 
-                            />
-                        </div>
-
-                    </div>
-                </motion.a>
-
-                <motion.a className='flex w-full' /* hrms */
-                href='hrms-case-study'
-                target="_blank" 
-                rel="noopener noreferrer"
-                variants={itemVariants(32, 0.9)} 
-                >
-                    <div className='project_card w-full mx-auto'>
-                        <span className='text-gray-500 text-[16px] font-semibold leading-[20px]'>
-                            2024</span>
-
-                            <img 
-                                src="/images/hrms_logo.svg" 
-                                alt="HRMS Logo" 
-                                className="w-[48px] h-[48px]" 
-                            />
-
-                        <div className='flex flex-col items-start gap-[16px]'>
-                            <div className='flex flex-col items-start'>
-                                <span className='text-gray-900 text-[16px] font-semibold leading-[20px]'>Personal Project</span>
-                                <span className='text-gray-500 text-[16px] font-semibold leading-[20px]'>Micro interactions study</span>
+                            <div className='flex flex-col w-full flex-start text-gray-900 ibm-plex-mono-medium text-[16px] leading-[20px]'>
+                                <span className='flex py-[8px]'>
+                                    Startup
+                                </span>
+                                <div className='flex gap-[8px] text-gray-500 ibm-plex-mono-regular text-[12px] leading-[16px]'>
+                                    <span>Product designer</span>
+                                    •
+                                    <span>2025</span>
+                                </div>
                             </div>
-                            <img 
-                                src="/images/add.svg" 
-                                alt="Add Icon" 
-                                className="w-[16px] h-[16px]" 
-                            />
                         </div>
+                        <div className='flex w-full h-full bg-white rounded-[18px] items-center justify-center'>
+                            <span className='text-gray-600 ibm-plex-mono-medium text-[16px] leading-[20px]'>
+                                Coming soon 🥀
+                            </span>
+                        </div>
+                    </a>
+                </motion.div>
 
-                    </div>
-                </motion.a>
-
-                <motion.a className='flex w-full' /* indx agency */
-                href='web-design-agency'
-                target="_blank" 
-                rel="noopener noreferrer"
-                variants={itemVariants(32, 1)} 
+                <motion.div className='flex w-full' /* indx agency */
+                variants={itemVariants(32, 0.9)}
                 >
-                    <div className='project_card w-full mx-auto'>
-                        <span className='text-gray-500 text-[16px] font-semibold leading-[20px]'>
-                            2023</span>
-
-                            <img 
-                                src="/images/indx_logo.svg" 
-                                alt="Indx Agency Logo" 
-                                className="w-[48px] h-[48px]" 
-                            />
-
-                        <div className='flex flex-col items-start gap-[16px]'>
-                            <div className='flex flex-col items-start'>
-                                <span className='text-gray-900 text-[16px] font-semibold leading-[20px]'>Indx Agency</span>
-                                <span className='text-gray-500 text-[16px] font-semibold leading-[20px]'>Landing page for a web design agency</span>
+                    <a className='project_card w-full mx-auto'
+                    href='indx-agency'
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    >
+                        <img 
+                            src="/images/indx-agency/cover.png" 
+                            alt="indx agency cover"
+                        />
+                        <div className='flex flex-col w-full h-full'>
+                            <div className='flex flex-col gap-[24px] w-full h-full border-b border-gray-300"'>
+                                <img 
+                                    src="/images/indx_logo.svg" 
+                                    alt="indx agency logo" 
+                                    className="w-[48px] h-[48px]" 
+                                />
+                                <span className='text-gray-900 ibm-plex-mono-medium text-[16px] leading-[20px]'>
+                                    Building indx agency’s digital identity from the ground up
+                                </span>
+                                <ul className='flex flex-start gap-[12px] items-stretch flex-wrap'>
+                                    <li className='pills'>Web design</li>
+                                    <li className='pills'>Webflow</li>
+                                    <li className='pills'>Branding</li>
+                                    <li className='pills'>Figma</li>
+                                    <li className='pills'>SEO</li>
+                                    <li className='pills'>B2B</li>
+                                </ul>
                             </div>
-                            <img 
-                                src="/images/add.svg" 
-                                alt="Add Icon" 
-                                className="w-[16px] h-[16px]" 
-                            />
+                            <div className='flex flex-col w-full flex-start text-gray-900 ibm-plex-mono-medium text-[16px] leading-[20px]'>
+                                <span className='flex py-[8px]'>
+                                    Web design agency
+                                </span>
+                                <div className='flex gap-[8px] text-gray-500 ibm-plex-mono-regular text-[12px] leading-[16px]'>
+                                    <span>Founder</span>
+                                    •
+                                    <span>Designer</span>
+                                    •
+                                    <span>2024</span>
+                                </div>
+                            </div>
                         </div>
-
-                    </div>
-                </motion.a>
-                
+                    </a>
+                </motion.div>
 
             </div>
-        </div>
     </motion.div>
   )
 }

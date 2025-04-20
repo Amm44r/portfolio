@@ -37,7 +37,7 @@ export default function RootLayout({
 
       <meta property="og:title" content="Ammaar's Portfolio" />
       <meta property="og:description" content="Coded using NextJS" />
-      <meta property="og:image" content="https://ammaarkhan.netlify.app/api/og?title=HelloWorld" />
+      <meta property="og:image" content="https://ammaarkhan.netlify.app/images/og-image.png" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="628" />
       </head>

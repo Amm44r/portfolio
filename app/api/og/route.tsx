@@ -11,7 +11,7 @@ export async function GET(request: Request) {
     return new ImageResponse(
       <div tw="flex flex-col w-full h-full items-center justify-center bg-white">
         <img
-          src="https://ammaarkhan.netlify.app:3000/images/og-image.png"
+          src="https://ammaarkhan.netlify.app/images/og-image.png"
           tw="w-[1200px] h-[628px]"
         />
         <h1 tw="text-4xl font-bold">{title}</h1>

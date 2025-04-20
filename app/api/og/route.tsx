@@ -14,7 +14,7 @@ export async function GET(request: Request) {
           src="https://ammaarkhan.netlify.app/images/og-image.png"
           tw="w-[1200px] h-[628px]"
         />
-        <h1 tw="text-4xl font-bold">My portfolio</h1>
+        <h1 tw="text-4xl font-bold">{title}</h1>
       </div>,
       {
         width: 1200,

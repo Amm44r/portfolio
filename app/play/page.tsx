@@ -54,7 +54,7 @@ const Hero = () => {
                         3D
                     </h1>
                     <span className="ibm-plex-mono-regular flex text-gray-600 text-[18px] max-w-[640px]">
-                        Character models I’ve built in 3D—showcasing sculpting, texturing, and posing.
+                        Character models I&apos;ve built in 3D—showcasing sculpting, texturing, and posing.
                     </span>
                 </div>
                 <div className='flex flex-col gap-[24px]'>

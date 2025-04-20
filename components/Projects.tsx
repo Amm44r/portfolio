@@ -71,7 +71,7 @@ const Projects = () => {
                                     className="w-[48px] h-[48px]" 
                                 />
                                 <span className='text-gray-900 ibm-plex-mono-medium text-[16px] leading-[20px]'>
-                                    Crafting Refera Trade’s vision: From concept to prototype
+                                    Building a design system
                                 </span>
                                 <ul className='flex flex-start gap-[12px] items-stretch flex-wrap'>
                                     <li className='pills'>B2B</li>

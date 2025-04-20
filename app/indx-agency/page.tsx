@@ -2,8 +2,6 @@ import React from 'react'
 import { GoArrowUpRight } from 'react-icons/go'
 import Footer from "@/components/Footer";
 
-
-
 const agency = () => {
   return (
     <div className='flex flex-col gap-[80px] px-[16px] items-center w-full'>

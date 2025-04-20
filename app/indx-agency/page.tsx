@@ -1,7 +1,7 @@
 import React from 'react'
 import { GoArrowUpRight } from 'react-icons/go'
 import Footer from "@/components/Footer";
-
+import Image from "next/image";
 
 
 const agency = () => {
@@ -23,12 +23,12 @@ const agency = () => {
           <div className='flex flex-col gap-[12px]'>
             <span className='ibm-plex-mono-regular text-[12px] text-gray-600 leading-[16px]'>Stack</span>
             <ul className='flex gap-[12px]'>
-              <img 
+              <Image 
                   src="/images/figma.svg" 
                   alt="Figma logo" 
                   className="w-[40px] h-[40px]" 
               />
-              <img 
+              <Image 
                 src="/images/webflow.svg" 
                 alt="Webflow logo" 
                 className="w-[40px] h-[40px]" 
@@ -68,7 +68,7 @@ const agency = () => {
           </div>
         </div>
       </div>
-      <img 
+      <Image 
         src="/images/indx-agency/indx-agency-intro.svg" 
         alt="indx agency cover" 
       />
@@ -106,12 +106,12 @@ const agency = () => {
           </div>
         </div>
         <div className='flex flex-col gap-[40px]'>
-          <img 
+          <Image 
           src="/images/indx-agency/font-1.svg" 
           alt="cal sans font" 
           className='max-w-[429px]'
           />
-          <img 
+          <Image 
           src="/images/indx-agency/font-2.svg" 
           alt="ibm plex sans font" 
           className='max-w-[429px]'
@@ -133,12 +133,12 @@ const agency = () => {
           </div>
         </div>
         <div className='flex w-full gap-[24px]'>
-          <img 
+          <Image 
           className='w-full rounded-[12px]'
           src="/images/indx-agency/design-language-button-hover.gif" 
           alt="indx agency button hover" 
           />
-          <img 
+          <Image 
           className='w-full rounded-[12px]'
           src="/images/indx-agency/design-language-faq-dropdown.gif" 
           alt="indx agency faq dropdown" 
@@ -160,7 +160,7 @@ const agency = () => {
           </div>
         </div>
         <div className='flex flex-col gap-[40px]'>
-          <img 
+          <Image 
           src="/images/indx-agency/funnel.svg" 
           alt="sales funnel" 
           />

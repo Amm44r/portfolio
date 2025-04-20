@@ -1,7 +1,8 @@
-"use client";
 import React from 'react';
 import Footer from "@/components/Footer";
 import { GoArrowUpRight } from 'react-icons/go'
+import Image from "next/image";
+
 
 const Hero = () => {
   return (
@@ -29,9 +30,9 @@ const Hero = () => {
                 </div>
                 <div className='flex flex-col items-center gap-[24px]'>
                     <div className='flex items-center justify-center gap-[24px]'>
-                        <img src='/images/play/itachi.png'/>
-                        <img src='/images/play/jinwoo.png'/>
-                        <img src='/images/play/lifeguard.png'/>
+                        <Image src='/images/play/itachi.png' alt='itachi drawing'/>
+                        <Image src='/images/play/jinwoo.png' alt='jinwoo drawing'/>
+                        <Image src='/images/play/lifeguard.png' alt='lifeguard drawing'/>
                     </div>
                     <div className="flex">
                         <a
@@ -59,12 +60,12 @@ const Hero = () => {
                 </div>
                 <div className='flex flex-col gap-[24px]'>
                     <div className='flex items-center justify-center gap-[24px]'>
-                        <img src='/images/play/3d-1.png'/>
-                        <img src='/images/play/3d-2.png'/>
+                        <Image src='/images/play/3d-1.png' alt='3d sci fi character'/>
+                        <Image src='/images/play/3d-2.png' alt='3d trex model'/>
                     </div>
                     <div className='flex items-center justify-center gap-[24px]'>
-                        <img src='/images/play/3d-3.png'/>
-                        <img src='/images/play/3d-4.png'/>
+                        <Image src='/images/play/3d-3.png' alt='3d dragon model'/>
+                        <Image src='/images/play/3d-4.png' alt='3d marvel rivals daredevil'/>
                     </div>
                 </div>
             </section>

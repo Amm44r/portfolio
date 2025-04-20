@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion';
+import Image from "next/image";
 
 // Framer Motion Variants
 const containerVariants = {
@@ -65,7 +66,7 @@ const Projects = () => {
                     >
                         <div className='flex flex-col w-full h-full'>
                             <div className='flex flex-col gap-[24px] w-full h-full border-b border-gray-300"'>
-                                <img 
+                                <Image 
                                     src="/images/refera_logo.svg" 
                                     alt="Refera Logo" 
                                     className="w-[48px] h-[48px]" 
@@ -107,13 +108,13 @@ const Projects = () => {
                     target="_blank" 
                     rel="noopener noreferrer"
                     >
-                        <img 
+                        <Image 
                             src="/images/indx-agency/cover.png" 
                             alt="indx agency cover"
                         />
                         <div className='flex flex-col w-full h-full'>
                             <div className='flex flex-col gap-[24px] w-full h-full border-b border-gray-300"'>
-                                <img 
+                                <Image 
                                     src="/images/indx_logo.svg" 
                                     alt="indx agency logo" 
                                     className="w-[48px] h-[48px]" 

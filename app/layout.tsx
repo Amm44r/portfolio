@@ -9,18 +9,20 @@ const fontSans = FontSans({
 })
 
 export const metadata: Metadata = {
+  title: "Ammaar's Portfolio",
+  description: "Coded using NextJS",
   openGraph: {
+    title: "Ammaar's Portfolio",
+    description: "Coded using NextJS",
     images: [
       {
-        url: "https://ammaarkhan.netlify.app/api/og?title=HelloWorld",
+        url: "https://ammaarkhan.netlify.app/images/og-image.png", // make sure this URL works
         width: 1200,
         height: 628,
-        alt: "Hello",
+        alt: "Ammaar's Portfolio Image",
       },
     ],
   },
-  title: "Ammaar's Portfolio",
-  description: "Coded using NextJS",
 };
 
 export default function RootLayout({
@@ -35,11 +37,6 @@ export default function RootLayout({
         rel="stylesheet"
         />
 
-      <meta property="og:title" content="Ammaar's Portfolio" />
-      <meta property="og:description" content="Coded using NextJS" />
-      <meta property="og:image" content="https://ammaarkhan.netlify.app/images/og-image.png" />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="628" />
       </head>
       <body className={fontSans.className}>{children}
         

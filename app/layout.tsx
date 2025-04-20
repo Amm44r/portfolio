@@ -37,6 +37,7 @@ export default function RootLayout({
         rel="stylesheet"
         />
 
+      <meta property="og:image" content="https://ammaarkhan.netlify.app/images/og-image-preview.png" />
       </head>
       <body className={fontSans.className}>{children}
         

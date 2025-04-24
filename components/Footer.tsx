@@ -28,8 +28,8 @@ const Footer = () => {
         {/* Toast Notifications */}
         <Toaster position="top-center" reverseOrder={false} />
 
-        <div className='flex flex-col sm:flex-row gap-4 sm:gap-[4px] items-center'>
-              <button onClick={() => scrollToSection("hero")}><BiHomeAlt className="w-[16px] h-[16px] m-[12px] icon" /></button>
+        <div className='flex flex-col sm:flex-row sm:gap-[4px] gap-[16px] items-center'>
+              <button onClick={() => scrollToSection("hero")}><BiHomeAlt className="w-[24px] h-[24px] m-[12px] icon" /></button>
               <span className='flex items-center text-[24px]'>·</span>
               <span 
                 className="inline-flex h-[24px] items-center ibm-plex-mono-medium text-[18px] leading-[24px] text-gray-900 cursor-pointer gap-[8px] px-[16px] py-[8px] transition-all duration-300 ease-in-out"
@@ -45,7 +45,7 @@ const Footer = () => {
               </a>
           </div>
           <div className='flex flex-col sm:flex-row gap-8 sm:gap-16'>
-              <div className='flex flex-col'>
+              <div className='flex flex-col items-center justify-center'>
                   <span className='text-gray-600 ibm-plex-mono-medium text-[18px]'>portfolio 2025</span>
               </div>
           </div>

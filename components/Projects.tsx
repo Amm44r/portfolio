@@ -27,7 +27,7 @@ const containerVariants = {
 const Projects = () => {
   return (
     <motion.div 
-    className='flex flex-col w-full justify-center sm:mx-auto mx-[16px] items-center'
+    className='flex flex-col w-full justify-center px-[40px] items-center'
     initial="hidden"
     animate="visible"
     variants={containerVariants}
@@ -58,7 +58,7 @@ const Projects = () => {
                 <motion.div className='flex w-full' /* refera trade */
                 variants={itemVariants(32, 0.8)}
                 >
-                    <a className='project_card w-full mx-auto'
+                    <a className='project_card sm:flex sm:flex-row flex-col-reverse w-full mx-auto'
                     //href='refera-trade'
                     // target="_blank" 
                     //rel="noopener noreferrer"
@@ -68,7 +68,7 @@ const Projects = () => {
                                 <img 
                                     src="/images/refera_logo.svg" 
                                     alt="Refera Logo" 
-                                    className="w-[48px] h-[48px]" 
+                                    className="w-[134px] h-[48px]" 
                                 />
                                 <span className='text-gray-900 ibm-plex-mono-medium text-[16px] leading-[20px]'>
                                     Building a design system
@@ -102,17 +102,18 @@ const Projects = () => {
                 <motion.div className='flex w-full' /* indx agency */
                 variants={itemVariants(32, 0.9)}
                 >
-                    <a className='project_card w-full mx-auto'
+                    <a className='project_card sm:flex sm:flex-row flex-col w-full mx-auto'
                     href='indx-agency'
                     target="_blank" 
                     rel="noopener noreferrer"
                     >
                         <img 
+                            className='w-full h-full object-cover'
                             src="/images/indx-agency/cover.png" 
                             alt="indx agency cover"
                         />
                         <div className='flex flex-col w-full h-full'>
-                            <div className='flex flex-col gap-[24px] w-full h-full border-b border-gray-300"'>
+                            <div className='flex flex-col gap-[24px] w-full h-full border-b border-gray-300 sm:pb-0 pb-[16px]'>
                                 <img 
                                     src="/images/indx_logo.svg" 
                                     alt="indx agency logo" 

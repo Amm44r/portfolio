@@ -33,13 +33,13 @@ const itemVariants = (initialY: number, delay: number) => ({
 const Hero = () => {
   return (
     <motion.section
-      className="py-32"
+      className="flex flex-col py-[128px] items-center"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
       id='hero'
     >
-        <div className="max-w-[880px] sm:mx-auto mx-[16px] w-full flex flex-col justify-start">
+        <div className="max-w-[880px] px-[40px] w-full flex flex-col justify-start">
 
           {/* First Div: Internship Status */}
           <motion.div

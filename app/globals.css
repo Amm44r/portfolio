@@ -86,6 +86,12 @@ body {
     transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
+@media (max-width: 640px) {
+  .project_card {
+    height: auto; /* Let content size naturally on small screens */
+  }
+}
+
 .project_card:hover {
     transform: translateY(-16px);
 }
@@ -121,25 +127,28 @@ body {
     font-style: italic;
   }
 
-.pulse {
+  .pulse {
     position: relative;
     width: 12px;
     height: 12px;
     background: #FF6600;
     border-radius: 50%;
-}
+    flex-shrink: 0; /* ✨ Prevents shrinking */
+  }
 
 .pulse::before {
-    content: '';
-    position: absolute;
-    top: -12px; /* Half of the pulse size */
-    left: -12px; /* Half of the pulse size */
-    width: 36px; /* Maximum pulse size */
-    height: 36px; /* Maximum pulse size */
-    background: #FF6600;
-    border-radius: 50%;
-    opacity: 0;
-    animation: pulseAnimate 2s ease-out infinite;
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  width: 36px;
+  height: 36px;
+  background: #FF6600;
+  border-radius: 50%;
+  opacity: 0;
+  animation: pulseAnimate 2s ease-out infinite;
+  pointer-events: none;
+  flex-shrink: 0; /* just in case */
 }
 
 @keyframes pulseAnimate {

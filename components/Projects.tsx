@@ -59,9 +59,9 @@ const Projects = () => {
                 variants={itemVariants(32, 0.8)}
                 >
                     <a className='project_card sm:flex sm:flex-row flex-col-reverse w-full mx-auto'
-                    //href='refera-trade'
-                    // target="_blank" 
-                    //rel="noopener noreferrer"
+                    href='refera-trade'
+                    target="_blank" 
+                    rel="noopener noreferrer"
                     >
                         <div className='flex flex-col w-full h-full'>
                             <div className='flex flex-col gap-[24px] w-full h-full border-b border-gray-300"'>
@@ -91,11 +91,11 @@ const Projects = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='flex w-full h-full bg-white rounded-[18px] items-center justify-center'>
-                            <span className='text-gray-600 ibm-plex-mono-medium text-[16px] leading-[20px]'>
-                                Coming soon 🥀
-                            </span>
-                        </div>
+                        <img 
+                            className='w-full h-full object-cover'
+                            src="/images/refera-trade/cover.png" 
+                            alt="refera trade cover"
+                        />
                     </a>
                 </motion.div>
 

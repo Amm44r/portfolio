@@ -57,7 +57,7 @@ const Hero = () => {
             variants={itemVariants(24, 0.3)} // y: 24, delay: 0.3
             >
             Hi <br/>
-            i&apos;m ammaar.
+            I&apos;m Ammaar.
           </motion.h1>
 
           {/* Third Div: Introductory text */}

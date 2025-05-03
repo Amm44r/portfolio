@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 const agency = () => {
   return (
     <div className='flex flex-col gap-[80px] px-[16px] items-center w-full'>
-      <div className='flex max-w-[1200px] w-full gap-[64px] pt-[64px] justify-center items-start'>
+      <div className='flex max-w-[1200px] w-full gap-[64px] pt-[64px] justify-between items-start'>
         <div className='flex flex-col max-w-[280px] gap-[32px]'>
           <div className='flex flex-col gap-[12px]'>
             <span className='ibm-plex-mono-regular text-[12px] text-gray-600 leading-[16px]'>Year</span>
@@ -36,7 +36,7 @@ const agency = () => {
 
         </div>
 
-        <div className='flex flex-col max-w-[880px] gap-[24px] px-[32px] border-l border-gray-300'>
+        <div className='flex flex-col max-w-[880px] w-full gap-[24px] px-[32px] border-l border-gray-300'>
           <h1
               className="ibm-plex-mono-medium sm:tracking-[-2px] text-gray-900 sm:text-[56px] text-[40px]"
               // variants={itemVariants(24, 0.3)} // y: 24, delay: 0.3
@@ -46,7 +46,7 @@ const agency = () => {
           </h1>
 
           <div
-            className="ibm-plex-mono-regular flex text-gray-600 text-[18px] max-w-[640px]"
+            className="ibm-plex-mono-regular flex text-gray-600 text-[18px] w-full"
           >
             A self-initiated project to build the foundation of indx - my own design studio.
             This case study walks through the process of designing and developing a bold, 

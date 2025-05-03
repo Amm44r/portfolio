@@ -33,17 +33,6 @@ const Hero = () => {
                         <img src='/images/play/jinwoo.png' alt='jinwoo drawing'/>
                         <img src='/images/play/lifeguard.png' alt='lifeguard drawing'/>
                     </div>
-                    <div className="flex">
-                        <a
-                        href="https://www.instagram.com/amk.bus/"
-                        className="button-secondary !mx-0 ibm-plex-mono-medium gap-[8px]"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                        check out more on instagram
-                        <GoArrowUpRight className="ml-1 icon" />
-                        </a>
-                    </div>
                 </div>
             </section>
             

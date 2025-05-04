@@ -6,7 +6,7 @@ import { GoArrowUpRight } from 'react-icons/go'
 const Hero = () => {
   return (
     <div id='hero'>
-        <div className="max-w-[880px] sm:mx-auto mx-[16px] pt-[64px] gap-[80px] w-full flex flex-col justify-start">
+        <div className="max-w-[880px] sm:mx-auto mx-[16px] pt-[64px] gap-[128px] w-full flex flex-col justify-start">
 
             <div className='flex flex-col gap-[24px]'> {/* hackathons */}
                 <h1 className="ibm-plex-mono-medium sm:tracking-[-2px] text-gray-900 sm:text-[56px] text-[40px]">

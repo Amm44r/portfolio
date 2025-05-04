@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 
 const agency = () => {
   return (
-    <div className='flex flex-col gap-[80px] px-[16px] items-center w-full'>
+    <div className='flex flex-col gap-[128px] px-[16px] items-center w-full'>
       <div className='flex max-w-[1200px] w-full gap-[64px] pt-[64px] justify-between items-start'>
         <div className='flex flex-col max-w-[280px] gap-[32px]'>
           <div className='flex flex-col gap-[12px]'>

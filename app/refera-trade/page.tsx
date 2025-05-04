@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 
 const agency = () => {
   return (
-    <div className='flex flex-col gap-[80px] px-[16px] items-center w-full'>
+    <div className='flex flex-col gap-[128px] px-[16px] items-center w-full'>
       <div className='flex max-w-[1200px] w-full gap-[64px] pt-[64px] justify-between items-start'>
         <div className='flex flex-col max-w-[280px] gap-[32px]'>
           <div className='flex flex-col gap-[12px]'>
@@ -180,6 +180,10 @@ const agency = () => {
 
       <div className='flex flex-col gap-[40px] max-w-[880px] w-full'> {/* ideation */}
         <div className='flex flex-col gap-[16px]'>
+        <div className="flex w-[880px] p-6 justify-center items-center gap-2 rounded-xl border border-gray-300 ibm-plex-mono-regular-italic">
+          For the purpose of presenting a summary of this project, only the &apos;Card&apos; 
+          component will be explored in this section of the case study.
+        </div>
           <span
             className="ibm-plex-mono-medium text-orange text-[18px] leading-[24px]">
             Ideation

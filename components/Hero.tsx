@@ -39,7 +39,7 @@ const Hero = () => {
       variants={containerVariants}
       id='hero'
     >
-        <div className="max-w-[880px] px-[40px] w-full flex flex-col justify-start">
+        <div className="max-w-[880px] w-full flex flex-col justify-start">
 
           {/* First Div: Internship Status */}
           <motion.div
